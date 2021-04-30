@@ -1,7 +1,7 @@
 import React from 'react';
 import Navbar from 'react-bootstrap/Navbar';
 import Nav from 'react-bootstrap/Nav';
-import { BrowserRouter as Router, Route, Link, Switch } from 'react-router-dom';
+import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 //import Login from './Login';
 import { LinkContainer } from 'react-router-bootstrap';
 import Fileupload from './Fileupload';
@@ -16,17 +16,17 @@ function Admin() {
                     <Navbar.Brand>ADMIN</Navbar.Brand>
 
                     <Nav className="mr-auto">
-                        <Nav.Link>Home</Nav.Link>
+                            <Nav.Link>Home</Nav.Link>
                         <LinkContainer to="/Fileupload">
                             <Nav.Link>File upload</Nav.Link>
                         </LinkContainer>
-                    <LinkContainer to="/Clients">
-                    <Nav.Link>Clients</Nav.Link>
+                        <LinkContainer to="/Clients">
+                            <Nav.Link>Clients</Nav.Link>
                         </LinkContainer>
                         <LinkContainer to="/Createclients">
                             <Nav.Link>Create client</Nav.Link>
                         </LinkContainer>
-                </Nav>
+                    </Nav>
                     
                 </Navbar>
                 
@@ -38,7 +38,7 @@ function Admin() {
                 </Switch>
             </Router>
         </div>
-        );
+    );
 }
 
 export default Admin;
